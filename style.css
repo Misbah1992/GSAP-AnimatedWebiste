@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -12,3 +13,118 @@ body {
     width: 100%;
 }
 
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+    position: fixed;
+}
+
+nav a,i {
+    text-decoration: none;
+    font-size: 1vw;
+    color: #fff;
+}
+
+.cntr-nav{
+    display: flex;
+    gap: 3vw;
+}
+
+nav i{
+    font-size: 1.5vw;
+}
+.one{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg ,rgb(240, 126, 59),rgb(241, 159, 92));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.one h1{
+    font-size: 22vw;
+    color: #fff;
+}
+
+#bottle1{
+    width: 40%;
+    z-index: 2;
+    position: absolute;
+}
+
+#flower1{
+    width: 20%;
+    position: absolute;
+    top:10%;
+    left: 30%;
+    z-index: 1;
+}
+#flower2{
+    width: 20%;
+    position: absolute;
+    top:55%;
+    right: 30%;
+    z-index: 3;
+}
+
+.two{
+ width: 100%;
+ height: 100vh;
+ background-color: rgb(255, 216, 172);
+ display: flex;
+}
+
+#leaf1{
+    width: 15%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+}
+#leaf2{
+    width: 15%;
+    position: absolute;
+    top:70%;
+    left: 80%;
+    transform: rotate(-90deg);
+}
+#leaf3{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+
+.lft-two {
+width:50%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: 'center';
+
+}
+
+.lft-two svg{
+    width: 70%;
+     height: 70%;
+    transform: rotateX(50deg);
+    margin-top: 28vh;
+}
+.rght-two{
+    width:50%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: 'center';
+}

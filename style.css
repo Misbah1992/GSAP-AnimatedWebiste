@@ -1,9 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* color: #fff; */
 }
 
@@ -11,15 +10,20 @@ html,
 body {
     height: 100%;
     width: 100%;
+
 }
 
-#main{
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#main {
     width: 100%;
     height: 100vh;
     background-color: brown;
 }
 
-nav{
+nav {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -27,104 +31,199 @@ nav{
     justify-content: space-between;
     padding: 0vw 10vw;
     position: fixed;
+    z-index: 99;
 }
 
-nav a,i {
+nav a,
+i {
     text-decoration: none;
     font-size: 1vw;
     color: #fff;
 }
 
-.cntr-nav{
+.cntr-nav {
     display: flex;
     gap: 3vw;
 }
 
-nav i{
+nav i {
     font-size: 1.5vw;
 }
-.one{
+
+.one {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(150deg ,rgb(240, 126, 59),rgb(241, 159, 92));
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    background: linear-gradient(150deg, rgb(240, 126, 59), rgb(241, 159, 92));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.one h1{
+.one h1 {
     font-size: 22vw;
     color: #fff;
 }
 
-#bottle1{
-    width: 40%;
+#bottle1 {
+    /* width: 40%; */
     z-index: 2;
     position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
-#flower1{
+#flower1 {
     width: 20%;
     position: absolute;
-    top:10%;
+    top: 10%;
     left: 30%;
     z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
-#flower2{
+
+#flower2 {
     width: 20%;
     position: absolute;
-    top:55%;
+    top: 55%;
     right: 30%;
     z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
-.two{
- width: 100%;
- height: 100vh;
- background-color: rgb(255, 216, 172);
- display: flex;
+.two {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 216, 172);
+    display: flex;
 }
 
-#leaf1{
+#leaf1 {
     width: 15%;
     position: absolute;
     top: 10%;
     left: 0%;
     transform: rotate(60deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
-#leaf2{
+
+#leaf2 {
     width: 15%;
     position: absolute;
-    top:70%;
+    top: 70%;
     left: 80%;
     transform: rotate(-90deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
-#leaf3{
+
+#leaf3 {
     width: 20%;
     position: absolute;
     top: 10%;
     right: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
-.lft-two {
-width:50%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: 'center';
-
+.lft-two,
+.rght-two {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
 }
 
-.lft-two svg{
-    width: 70%;
-     height: 70%;
+.lft-two svg {
+
+    width: 90%;
+    height: 70%;
     transform: rotateX(50deg);
     margin-top: 28vh;
 }
-.rght-two{
-    width:50%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: 'center';
+
+.rght-two h1 {
+    color: #fff;
+    font-size: 4vw;
+}
+
+.rght-two p {
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+}
+
+.three {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, #f07e3b, rgb(241, 159, 92));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+
+
+.card {
+    position: relative;
+    width: 25vw;
+    height: 70vh;
+    margin-top: 10vh;
+    background-color: #ffffff;
+    /* background: linear-gradient(150deg, rgb(240, 126, 59), rgb(241, 159, 92)); */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+/* .card:nth-child(1){
+    background-color: rgb(36, 21, 6);
+} */
+
+.card h1 {
+    font-size: 3vw;
+    margin-top: 40vh;
+}
+
+.card button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: #f07e3b;
+    color: #fff;
+}
+
+#bottle2 {
+    width: 120%;
+    position: absolute;
+    top: -15%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#bottle3 {
+    width: 30%;
+    position: absolute;
+    top: 8%;
+}
+
+#bottle4 {
+    width: 70%;
+    position: absolute;
+    top: -15%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+.smallleaf1 {
+    width: 16vw;
+    width: 65%;
+    position: absolute;
+    top: -25%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
 }
